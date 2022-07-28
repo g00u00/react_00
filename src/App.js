@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import Counter from "./components/Counter";
+import Value from "./components/Value";
+import Tmp from "./components/tmp";
 
 function App() {
     // const state = useState(5)
@@ -8,7 +10,7 @@ function App() {
     // console.log(likes);
     // console.log(setLikes);
 
-    const [value, setValue] = useState('Текст')
+ /*   const [value, setValue] = useState('Текст')*/
 
     // function increment() {
     //     setLikes(likes + 1);
@@ -19,7 +21,7 @@ function App() {
     //     console.log(likes)
     // }
     return (
-        <div className="App">
+        <div>
             {/*
             <h1>{likes}</h1>
             <h1>{value}</h1>
@@ -33,8 +35,16 @@ function App() {
             <button onClick={() => likes -= 1}>Уменньшить</button>
 
 */}
+{/*            <h1>{value}</h1>
+            <input
+                type="text"
+                value={value}
+                onChange={event => setValue(event.target.value)}
+            /> реализуется двухсторонее связывание*/}
+            <Value/>
             <Counter/>
-            <Counter/>
+            <Tmp/>
+
         </div>
     );
 }

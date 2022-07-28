@@ -1,5 +1,25 @@
 ufw disable
 https://nodejs.org/en/download/package-manager/
+https://github.com/nodesource/distributions/blob/master/README.md
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
+node -v
+npx -v
+npm install -g yarn
+
+yarn create react-app myreactapp
+cd myreactapp
+yarn start
+npm start
+
+npm i react
+npx -v
+npx create-react-app my-app
+cd my-app
+npm start
 https://tecadmin.net/how-to-install-reactjs-on-ubuntu-20-04/
 
 
@@ -42,3 +62,27 @@ jsx похож на нтмл и имеет расширенный  ф-л
         console.log(count)
     }
     - не вызываем напрямую, а используем ф-ю, которя для жтого предназначена
+
+----------------------
+<h1>{value}</h1>
+<input
+    type="text"
+    value={value}
+    onChange={event => setValue(event.target.value)}
+/> {/*реализуется двухсторонее связывание*/}
+вешаем слушатель события
+колбеки для событий первыь параметром принимают евент у которго есть поле таргет и поле валуе
+onChange = event => {event.target.value)}
+таргет -  дом-элемент
+валуе -  значение которое в нем
+мы это значение достаем и помещем в состояние
+onChange={event => setValue(event.target.value)}
+получаем двухсторонее связывание - управляемые компоненты
+------------
+
+rsc - шаблон компонента
+cd
+
+----------
+хуки - только на верхнем уровне
+use
