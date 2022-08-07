@@ -10,10 +10,18 @@ node -v
 npx -v
 npm install -g yarn
 
+
 yarn create react-app myreactapp
 cd myreactapp
 yarn start
 npm start
+
+
+https://create-react-app.dev/docs/deployment
+yarn build
+install -g serve
+serve -s build
+
 
 npm i react
 npx -v
