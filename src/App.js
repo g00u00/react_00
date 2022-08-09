@@ -1,25 +1,13 @@
 import React, {useState} from "react";
+import State from "./State";
+import App_00 from "./components/App_00"
 import Counter from "./components/Counter";
-import Value from "./components/Value";
-import Tmp from "./components/tmp";
+import InputValue from "./components/InputValue";
+import Tmp_xyz from "./components/Tmp_xyz";
 
 function App() {
-    // const state = useState(5)
-    // console.log(state)
-    // const[likes, setLikes] = useState(0);
-    // console.log(likes);
-    // console.log(setLikes);
 
- /*   const [value, setValue] = useState('Текст')*/
 
-    // function increment() {
-    //     setLikes(likes + 1);
-    //     console.log(likes)
-    // }
-    // function decrement() {
-    //     setLikes(likes - 1)
-    //     console.log(likes)
-    // }
     return (
         <div>
             {/*
@@ -41,9 +29,12 @@ function App() {
                 value={value}
                 onChange={event => setValue(event.target.value)}
             /> реализуется двухсторонее связывание*/}
-            <Value/>
+
+            <State/>
+            <App_00/>
+            <InputValue/>
             <Counter/>
-            <Tmp/>
+            <Tmp_xyz/>
 
         </div>
     );
