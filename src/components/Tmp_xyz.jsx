@@ -7,8 +7,10 @@ let y = x + 2;
 function Tmp_xyz() {
     return (
         <div>
-            <h1>Tmp_xyz</h1>
-            y = {y}
+            <h1>Tmp_xyz
+                y = {y}
+            </h1>
+
         </div>
     );
 }
